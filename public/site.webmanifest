@@ -1,0 +1,21 @@
+{
+  "name": "OTCR Consulting",
+  "short_name": "OTCR",
+  "description": "Premier student-led consulting organization delivering exceptional strategic solutions",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#1e40af",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "developer": "Made by Swarnika Bhardwaj"
+} 
