@@ -4,7 +4,7 @@ import path from "path";
 // import { componentTagger } from "lovable-tagger"; // optional
 
 export default defineConfig({
-  base: "/",                       // ✅ custom domain = root
+  base: "/",                       // custom domain = root
   server: { host: true, port: 8080 },
   plugins: [react()],
   resolve: { alias: { "@": path.resolve(__dirname, "./src") } },
