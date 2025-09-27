@@ -4,20 +4,26 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import otcrLogo from "@/assets/otcr-logo-new.png";
 
+type NavItem = {
+  name: string;
+  href: string;
+  external?: boolean;
+};
+
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
-  const navigation = [
+  const navigation: NavItem[] = [
     { name: "Home", href: "/" },
     { name: "About Us", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Past Projects", href: "/projects" },
     { name: "Sponsors", href: "/sponsors" },
-    { name: "Recruitment", href: "/recruitment" },
+    { name: "Recruitment", href: "https://recruit.otcr-consulting.com/", external: true },
   ];
 
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (item: NavItem) => !item.external && location.pathname === item.href;
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
@@ -40,19 +46,29 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            {navigation.map((item) => (
-              <Link
-                key={item.name}
-                to={item.href}
-                className={`text-sm font-medium transition-colors duration-300 ${
-                  isActive(item.href)
-                    ? "text-primary"
-                    : "text-muted-foreground hover:text-foreground"
-                }`}
-              >
-                {item.name}
-              </Link>
-            ))}
+            {navigation.map((item) => {
+              const linkClasses = `text-sm font-medium transition-colors duration-300 ${
+                isActive(item)
+                  ? "text-primary"
+                  : "text-muted-foreground hover:text-foreground"
+              }`;
+
+              return item.external ? (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={linkClasses}
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <Link key={item.name} to={item.href} className={linkClasses}>
+                  {item.name}
+                </Link>
+              );
+            })}
             <Button variant="hero" size="sm" asChild>
               <Link to="/contact">Contact Us</Link>
             </Button>
@@ -71,20 +87,39 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <nav className="flex flex-col space-y-4">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.href}
-                  className={`text-sm font-medium transition-colors duration-300 ${
-                    isActive(item.href)
-                      ? "text-primary"
-                      : "text-muted-foreground hover:text-foreground"
-                  }`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {navigation.map((item) => {
+                const linkClasses = `text-sm font-medium transition-colors duration-300 ${
+                  isActive(item)
+                    ? "text-primary"
+                    : "text-muted-foreground hover:text-foreground"
+                }`;
+
+                if (item.external) {
+                  return (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={linkClasses}
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.name}
+                    </a>
+                  );
+                }
+
+                return (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className={linkClasses}
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                );
+              })}
               <Button variant="hero" size="sm" asChild className="w-fit">
                 <Link to="/contact">Contact Us</Link>
               </Button>
