@@ -32,7 +32,7 @@ const About = () => {
       objectPosition: "50% 50%",
     },
     {
-      name: "Sidhaartha Venkatesh",
+      name: "Siddhaartha Venkatesh",
       role: "Executive Partner",
       bio: "",
       education: "University of Illinois at Urbana-Champaign",
@@ -82,16 +82,6 @@ const About = () => {
       objectPosition: "35% 65%",
     },
     {
-      name: "Ava Shi",
-      role: "New Hire Development Partner",
-      bio: "",
-      education: "University of Illinois at Urbana-Champaign",
-      linkedin: "https://linkedin.com/in/ava-shi-b45b1b277",
-      email: "avas5@illinois.edu",
-      image: avaImage,
-      objectPosition: "50% 50%",
-    },
-    {
       name: "Jon Han",
       role: "Professional Development Partner",
       bio: "",
@@ -100,16 +90,6 @@ const About = () => {
       email: "jonhan2@illinois.edu",
       image: jonImage,
       objectPosition: "80% 20%",
-    },
-    {
-      name: "Adam El Bahey",
-      role: "Social Partner",
-      bio: "",
-      education: "University of Illinois at Urbana-Champaign",
-      linkedin: "https://linkedin.com/in/adam-el-bahey-64a791209",
-      email: "elbahey2@illinois.edu",
-      image: adamImage,
-      objectPosition: "50% 50%",
     },
   ];
 
