@@ -32,7 +32,7 @@ const About = () => {
       objectPosition: "50% 50%",
     },
     {
-      name: "Siddhaartha Venkatesh",
+      name: "Siddhaarta Venkatesh",
       role: "Executive Partner",
       bio: "",
       education: "University of Illinois at Urbana-Champaign",
