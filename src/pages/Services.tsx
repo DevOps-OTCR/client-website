@@ -29,7 +29,7 @@ const Services = () => {
       { week: "Weeks 11-14", activity: "Solution Design", details: "Detailed recommendations and roadmap" },
       { week: "Weeks 15-16", activity: "Delivery & Handoff", details: "Final presentation and documentation" }
     ],
-    pricing: "Starting from $2000",
+    pricing: "Starting from $2,000",
     industries: ["Technology", "Healthcare", "Financial Services", "Retail", "Manufacturing"]
   };
 
@@ -52,7 +52,7 @@ const Services = () => {
       { week: "Weeks 6-7", activity: "Refinement", details: "Solution refinement and feasibility analysis" },
       { week: "Week 8", activity: "Final Delivery", details: "Presentation and handoff documentation" }
     ],
-    pricing: "Starting from $1000",
+    pricing: "Starting from $1,000",
     industries: ["Startups", "SMEs", "Non-profits", "Government", "Education"]
   };
 
