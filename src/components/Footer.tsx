@@ -95,7 +95,7 @@ const Footer = () => {
 
         <div className="border-t border-border mt-8 pt-8 flex justify-center">
           <p className="text-sm text-muted-foreground">
-            © 2024 OTCR Consulting. All rights reserved.
+            © 2025 OTCR Consulting. All rights reserved.
           </p>
         </div>
       </div>
