@@ -7,89 +7,97 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 // Import headshot images
-import atharwaImage from "@/assets/IMG_2051.PNG";
-import sidhaarthaImage from "@/assets/DSC00409 (1).JPG";
-import lakshImage from "@/assets/Laksh.jpg";
-import drewImage from "@/assets/Drew Duckler.jpg";
-import stutiImage from "@/assets/stuti_bhatia_headshot.png";
-import samImage from "@/assets/Birdsley_Sam_Headshot.png";
-import avaImage from "@/assets/ava-shi-headshot.jpg";
-import jonImage from "@/assets/Jon.JPG";
-import adamImage from "@/assets/Adam.jpg";
+import aaronImg from "@/assets/aaron.jpeg";
+import lakshImg from "@/assets/laksh.jpeg";
+import isaiahImg from "@/assets/Isaiah.jpeg";
+import swarnikaImg from "@/assets/swarnika.jpeg";
+import atharvaImg from "@/assets/atharva_sindwani.jpeg";
+import isabellaImg from "@/assets/Isabella.jpeg";
+import adeetyaImg from "@/assets/adeetya.jpeg";
+import mihikaImg from "@/assets/mihika.jpeg";
 import img2546 from "@/assets/IMG_2546.jpg";
-import img2547 from "@/assets/IMG_2547.jpg";
 
 const About = () => {
   const leadership = [
     {
-      name: "Atharva Awasthi",
+      name: "Aaron Poetzel",
       role: "Internal Operations Partner",
       bio: "",
       education: "University of Illinois at Urbana-Champaign",
-      linkedin: "https://linkedin.com/in/atharvaawasthi",
-      email: "awasthi8@illinois.edu",
-      image: atharwaImage,
+      linkedin: "https://www.linkedin.com/in/aaron-poetzel/",
+      email: "poetzel3@illinois.edu",
+      image: aaronImg,
       objectPosition: "50% 50%",
     },
     {
-      name: "Siddhaarta Venkatesh",
-      role: "Executive Partner",
-      bio: "",
-      education: "University of Illinois at Urbana-Champaign",
-      linkedin: "https://linkedin.com/in/siddhaartav",
-      email: "sv39@illinois.edu",
-      image: sidhaarthaImage,
-      objectPosition: "40% 60%",
-    },
-    {
       name: "Laksh Sharma",
-      role: "Technology Partner",
+      role: "Executive Partner",
       bio: "",
       education: "University of Illinois at Urbana-Champaign",
       linkedin: "https://linkedin.com/in/laksh-sharma-690b6a298",
       email: "lsharma2@illinois.edu",
-      image: lakshImage,
+      image: lakshImg,
       objectPosition: "50% 50%",
     },
     {
-      name: "Drew Duckler",
-      role: "Career Placement Partner",
-      bio: "",
-      education: "University of Illinois at Urbana-Champaign",
-      linkedin: "https://linkedin.com/in/drew-duckler-34176a250",
-      email: "drewmd3@illinois.edu",
-      image: drewImage,
-      objectPosition: "90% 10%",
-    },
-    {
-      name: "Stuti Bhatia",
-      role: "Alumni Relations Partner",
-      bio: "",
-      education: "University of Illinois at Urbana-Champaign",
-      linkedin: "https://linkedin.com/in/stuti-bhatia",
-      email: "stutib3@illinois.edu",
-      image: stutiImage,
-      objectPosition: "10% 90%",
-    },
-    {
-      name: "Sam Birdsley",
+      name: "Isaiah Ketedji",
       role: "Project Excellence Partner",
       bio: "",
       education: "University of Illinois at Urbana-Champaign",
-      linkedin: "https://linkedin.com/in/sam-birdsley-189655248",
-      email: "samuel36@illinois.edu",
-      image: samImage,
-      objectPosition: "35% 65%",
+      linkedin: "https://www.linkedin.com/in/isaiah-ketedji-57247824a/",
+      email: "ketedji2@illinois.edu",
+      image: isaiahImg,
+      objectPosition: "50% 50%",
     },
     {
-      name: "Jon Han",
+      name: "Swarnika Bhardwaj",
+      role: "Corporate Affairs Partner",
+      bio: "",
+      education: "University of Illinois at Urbana-Champaign",
+      linkedin: "https://www.linkedin.com/in/swarnika-bhardwaj31/",
+      email: "sb113@illinois.edu",
+      image: swarnikaImg,
+      objectPosition: "50% 50%",
+    },
+    {
+      name: "Atharva Sindwani",
       role: "Professional Development Partner",
       bio: "",
       education: "University of Illinois at Urbana-Champaign",
-      linkedin: "https://linkedin.com/in/hanjon",
-      email: "jonhan2@illinois.edu",
-      image: jonImage,
-      objectPosition: "80% 20%",
+      linkedin: "https://www.linkedin.com/in/atharva-sindwani-686b292a7/",
+      email: "as203@illinois.edu",
+      image: atharvaImg,
+      objectPosition: "50% 100%",
+    },
+    {
+      name: "Isabella Watson",
+      role: "Alumni Relations Partner",
+      bio: "",
+      education: "University of Illinois at Urbana-Champaign",
+      linkedin: "https://www.linkedin.com/in/isabella-watson-353038270/",
+      email: "iwatson3@illinois.edu",
+      image: isabellaImg,
+      objectPosition: "50% 50%",
+    },
+    {
+      name: "Adeetya Upadhyay",
+      role: "Technology Partner",
+      bio: "",
+      education: "University of Illinois at Urbana-Champaign",
+      linkedin: "https://www.linkedin.com/in/adeetya-upadhyay/",
+      email: "adeeu2@illinois.edu",
+      image: adeetyaImg,
+      objectPosition: "50% 50%",
+    },
+    {
+      name: "Mihika Hemrajani",
+      role: "Social Partner",
+      bio: "",
+      education: "University of Illinois at Urbana-Champaign",
+      linkedin: "https://www.linkedin.com/in/mihika-hemrajani/",
+      email: "mihikah2@illinois.edu",
+      image: mihikaImg,
+      objectPosition: "50% 50%",
     },
   ];
 
