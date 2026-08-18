@@ -279,9 +279,9 @@ const About = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+          <div className="flex flex-wrap justify-center gap-8">
             {leadership.map((leader, index) => (
-              <Card key={index} className="p-6 shadow-medium hover:shadow-strong transition-all duration-300 border border-primary/20 hover:border-primary/40">
+              <Card key={index} className="w-full md:w-[calc(50%_-_1rem)] lg:w-[calc(33.333%_-_1.333rem)] xl:w-[calc(25%_-_1.5rem)] p-6 shadow-medium hover:shadow-strong transition-all duration-300 border border-primary/20 hover:border-primary/40">
                 <CardContent className="space-y-4">
                   <div className="w-full grid place-items-center mb-4">
                     <div className="w-24 h-24 rounded-full overflow-hidden shrink-0">
