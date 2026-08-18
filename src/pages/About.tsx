@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Users, Target, Lightbulb, TrendingUp, Linkedin, Mail } from "lucide-react";
+import { Users, Target, Lightbulb, TrendingUp, Linkedin, Mail, Code2, Layers, Database, Workflow } from "lucide-react";
 import { Link } from "react-router-dom";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -193,6 +193,62 @@ const About = () => {
                 <h3 className="text-xl font-semibold text-foreground">Operational Excellence</h3>
                 <p className="text-muted-foreground">
                   Process optimization and organizational efficiency improvements
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center p-6 shadow-medium hover:shadow-strong transition-all duration-300">
+              <CardContent className="space-y-4">
+                <div className="flex justify-center">
+                  <div className="p-4 bg-gradient-primary rounded-full">
+                    <Code2 size={32} className="text-primary-foreground" />
+                  </div>
+                </div>
+                <h3 className="text-xl font-semibold text-foreground">Technology Consulting</h3>
+                <p className="text-muted-foreground">
+                  Technical strategy and delivery for technology clients, from architecture and system design to full-stack implementation
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center p-6 shadow-medium hover:shadow-strong transition-all duration-300">
+              <CardContent className="space-y-4">
+                <div className="flex justify-center">
+                  <div className="p-4 bg-gradient-primary rounded-full">
+                    <Layers size={32} className="text-primary-foreground" />
+                  </div>
+                </div>
+                <h3 className="text-xl font-semibold text-foreground">Product Engineering</h3>
+                <p className="text-muted-foreground">
+                  Designing and maintaining the internal platforms OTCR runs on, from project dashboards to recruiting and knowledge systems
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center p-6 shadow-medium hover:shadow-strong transition-all duration-300">
+              <CardContent className="space-y-4">
+                <div className="flex justify-center">
+                  <div className="p-4 bg-gradient-primary rounded-full">
+                    <Database size={32} className="text-primary-foreground" />
+                  </div>
+                </div>
+                <h3 className="text-xl font-semibold text-foreground">Data &amp; AI Solutions</h3>
+                <p className="text-muted-foreground">
+                  Applied data and AI engagements, including retrieval-based tools that turn firm and client knowledge into searchable insight
+                </p>
+              </CardContent>
+            </Card>
+            
+            <Card className="text-center p-6 shadow-medium hover:shadow-strong transition-all duration-300">
+              <CardContent className="space-y-4">
+                <div className="flex justify-center">
+                  <div className="p-4 bg-gradient-primary rounded-full">
+                    <Workflow size={32} className="text-primary-foreground" />
+                  </div>
+                </div>
+                <h3 className="text-xl font-semibold text-foreground">Automation &amp; Integration</h3>
+                <p className="text-muted-foreground">
+                  Connecting systems and automating workflows across the tools teams already rely on day to day
                 </p>
               </CardContent>
             </Card>
