@@ -9,12 +9,13 @@ import Footer from "@/components/Footer";
 // Import headshot images
 import aaronImg from "@/assets/aaron.jpeg";
 import lakshImg from "@/assets/laksh.jpeg";
-import isaiahImg from "@/assets/Isaiah.jpeg";
-import swarnikaImg from "@/assets/swarnika.jpeg";
-import atharvaImg from "@/assets/atharva_sindwani.jpeg";
-import isabellaImg from "@/assets/Isabella.jpeg";
-import adeetyaImg from "@/assets/adeetya.jpeg";
-import mihikaImg from "@/assets/mihika.jpeg";
+import shritanImg from "@/assets/shritan.jpeg";
+import ivanImg from "@/assets/ivan.jpeg";
+import rohanImg from "@/assets/rohan.jpeg";
+import manImg from "@/assets/man.jpeg";
+import anuImg from "@/assets/anu.jpeg";
+import chinmayImg from "@/assets/chinmay.jpeg";
+import rishabhImg from "@/assets/rishabh.jpeg";
 import img2546 from "@/assets/IMG_2546.jpg";
 
 const About = () => {
@@ -40,63 +41,73 @@ const About = () => {
       objectPosition: "50% 50%",
     },
     {
-      name: "Isaiah Ketedji",
+      name: "Man Kwanpracha",
       role: "Project Excellence Partner",
       bio: "",
       education: "University of Illinois at Urbana-Champaign",
-      linkedin: "https://www.linkedin.com/in/isaiah-ketedji-57247824a/",
-      email: "ketedji2@illinois.edu",
-      image: isaiahImg,
+      linkedin: "",
+      email: "",
+      image: manImg,
       objectPosition: "50% 50%",
     },
     {
-      name: "Swarnika Bhardwaj",
+      name: "Shritan Bhupathiraju",
       role: "Corporate Affairs Partner",
       bio: "",
       education: "University of Illinois at Urbana-Champaign",
-      linkedin: "https://www.linkedin.com/in/swarnika-bhardwaj31/",
-      email: "sb113@illinois.edu",
-      image: swarnikaImg,
+      linkedin: "",
+      email: "",
+      image: shritanImg,
       objectPosition: "50% 50%",
     },
     {
-      name: "Atharva Sindwani",
+      name: "Ivan Nang",
       role: "Professional Development Partner",
       bio: "",
       education: "University of Illinois at Urbana-Champaign",
-      linkedin: "https://www.linkedin.com/in/atharva-sindwani-686b292a7/",
-      email: "as203@illinois.edu",
-      image: atharvaImg,
-      objectPosition: "50% 100%",
+      linkedin: "",
+      email: "",
+      image: ivanImg,
+      objectPosition: "50% 50%",
     },
     {
-      name: "Isabella Watson",
+      name: "Anu Ghosh",
       role: "Alumni Relations Partner",
       bio: "",
       education: "University of Illinois at Urbana-Champaign",
-      linkedin: "https://www.linkedin.com/in/isabella-watson-353038270/",
-      email: "iwatson3@illinois.edu",
-      image: isabellaImg,
+      linkedin: "",
+      email: "",
+      image: anuImg,
       objectPosition: "50% 50%",
     },
     {
-      name: "Adeetya Upadhyay",
+      name: "Chinmay Rawat",
       role: "Technology Partner",
       bio: "",
       education: "University of Illinois at Urbana-Champaign",
-      linkedin: "https://www.linkedin.com/in/adeetya-upadhyay/",
-      email: "adeeu2@illinois.edu",
-      image: adeetyaImg,
+      linkedin: "",
+      email: "",
+      image: chinmayImg,
       objectPosition: "50% 50%",
     },
     {
-      name: "Mihika Hemrajani",
+      name: "Rohan Raman",
       role: "Social Partner",
       bio: "",
       education: "University of Illinois at Urbana-Champaign",
-      linkedin: "https://www.linkedin.com/in/mihika-hemrajani/",
-      email: "mihikah2@illinois.edu",
-      image: mihikaImg,
+      linkedin: "",
+      email: "",
+      image: rohanImg,
+      objectPosition: "50% 50%",
+    },
+    {
+      name: "Rishabh Chhabra",
+      role: "Finance Partner",
+      bio: "",
+      education: "University of Illinois at Urbana-Champaign",
+      linkedin: "",
+      email: "",
+      image: rishabhImg,
       objectPosition: "50% 50%",
     },
   ];
@@ -299,20 +310,24 @@ const About = () => {
                   )}
                   
                   <div className="flex justify-center space-x-3 pt-2 border-t border-border">
-                    <a 
-                      href={leader.linkedin} 
-                      className="text-muted-foreground hover:text-primary transition-colors duration-300"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Linkedin size={18} />
-                    </a>
-                    <a 
-                      href={`mailto:${leader.email}`} 
-                      className="text-muted-foreground hover:text-primary transition-colors duration-300"
-                    >
-                      <Mail size={18} />
-                    </a>
+                    {leader.linkedin && (
+                      <a 
+                        href={leader.linkedin} 
+                        className="text-muted-foreground hover:text-primary transition-colors duration-300"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Linkedin size={18} />
+                      </a>
+                    )}
+                    {leader.email && (
+                      <a 
+                        href={`mailto:${leader.email}`} 
+                        className="text-muted-foreground hover:text-primary transition-colors duration-300"
+                      >
+                        <Mail size={18} />
+                      </a>
+                    )}
                   </div>
                 </CardContent>
               </Card>
